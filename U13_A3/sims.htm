@@ -19,6 +19,34 @@ a:link{color:#44763E;}
 a:visited{color:#9C2511;}
 a:hover{color:#0880D1B;}
 
+  table {
+        width: 100%;
+        border-collapse: collapse;
+        cursor: pointer;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+    }
+    
+    /* Style for the tick mark column */
+    .tick-cell {
+        width: 30px;
+        text-align: center;
+        font-weight: bold;
+        color: green;
+    }
+
+    /* Initial state: no tick */
+    .tick-cell::after {
+        content: ""; 
+    }
+
+    /* Ticked state: add tick mark */
+    tr.ticked .tick-cell::after {
+        content: "\2714"; /* Unicode checkmark 
+
 </style>
 </head>
 </body>
@@ -60,8 +88,136 @@ As technology advances, eSIMs are becoming increasingly popular, as they enhance
 
 The availability of eSIMs is growing rapidly in the UK, and with Apple starting to phase out physical SIM cards on iPhones in more countries, it may soon become the primary method for activating phone contracts.
 </p>
-
+  
 <h3>
+<div class="tablecontainer">
+  <table>
+    <tr>
+      <th>Feature</th>
+      <th>SIMS ID</th>
+      <th>SIMS ID Light</th>
+      
+      
+    </tr>
+    <tr>
+     
+      <td>SOS to Capita hosted services</td>
+     <td class="tick-cell"></td>
+     <td class="tick-cell"></td>
+      <div>
+      
+       </tr>
+    <tr>
+     
+      <td>Provides SOS to your cloud services</td>
+     <td class="tick-cell"></td>
+     <td class="tick-cell"></td>
+      <div>
+      
+      </tr>
+    <tr>
+     
+      <td>user and group management </td>
+     <td class="tick-cell"></td>
+     <td class="tick-cell"></td>
+      <div>
+      
+       </tr>
+    <tr>
+    
+    </tr>
+    <tr>
+     
+      <td>Allows users to reset their own passwords </td>
+     <td class="tick-cell"></td>
+     <td class="tick-cell"></td>
+      <div>
+      
+       </tr>
+    <tr>
+      
+      <td>Automatically pulls data from SIMS into SIMS ID</td>
+     <td class="tick-cell"></td>
+     <td class="tick-cell"></td>
+      <div>
+      
+       </tr>
+    <tr>
+    
+    <td>Automatically greats office 365 and google accounts</td>
+     <td class="tick-cell"></td>
+     <td class="tick-cell"></td>
+      <div>
+      
+       </tr>
+    <tr>
+    
+    <td>Customisable launch pad</td>
+     <td class="tick-cell"></td>
+     <td class="tick-cell"></td>
+      <div>
+      
+       </tr>
+    <tr>
+    
+    <td></td>
+     <td class="tick-cell"></td>
+     <td class="tick-cell"></td>
+      <div>
+      
+       </tr>
+    <tr>
+    
+    <td></td>
+     <td class="tick-cell"></td>
+     <td class="tick-cell"></td>
+      <div>
+      
+       </tr>
+    <tr>
+      
+      
+    </tr>
+    <tr>
+      
+
+       <td></td>
+   <td class="tick-cell"></td>
+   <td class="tick-cell"></td>
+      
+    </tr>
+    <tr>
+      <td></td>
+      <td class="tick-cell"></td>
+      <td class="tick-cell"></td>
+      
+      
+    </tr>
+  </table>
+  <script>
+    // Add event listener to the table body
+    document.querySelector('tbody').addEventListener('click', function(e) {
+        // Find the closest table row (tr) from the clicked element
+        const row = e.target.closest('tr');
+        if (row) {
+            // Toggle the 'ticked' class on the row
+            row.classList.toggle('ticked');
+        }
+    });
+</script>
+
+</div>
+
+</body>
+</html>
+
+ 
+
+
+
+
+
+  
 <p>What phones are compatible?</p>
 
 <h4>
